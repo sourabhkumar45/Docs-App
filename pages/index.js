@@ -3,9 +3,14 @@ import Image from "next/image";
 import Button from "@material-tailwind/react/Button";
 import Icon from "@material-tailwind/react/Icon";
 import Header from "../components/Header";
+import Login from "../components/Login";
 import plusImage from "../public/assets/images/plus-icon.png";
-
+import { useSession, SessionProvider } from "next-auth/react";
 export default function Home() {
+  const { data: session, status } = useSession(); // session is null if not logged in
+  if (!session) {
+    return <Login />;
+  }
   return (
     <div>
       <Head>
