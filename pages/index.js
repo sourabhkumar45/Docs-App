@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header></Header>
-      <section className="bg-[#F8F9FA] pb-10 px-10">
+      <section className="bg-[#F8F9FA] pb-10 px-10 ">
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center justify-between py-6">
             <h2 className="text-gray-700 text-lg">Start a new Document</h2>
@@ -28,7 +28,7 @@ export default function Home() {
             </Button>
           </div>
           <div>
-            <div className="relative h-45 w-40">
+            <div className="relative flex items-center justify-center h-45 w-40 hover:shadow-md bg-white">
               <Image
                 src={plusImage}
                 width={150}
@@ -36,7 +36,18 @@ export default function Home() {
                 className="border-1 bg-white"
               />
             </div>
-            <p>Blank</p>
+            <p className="ml-2 pt-2 font-semi-bold text-sm text-gray-600">
+              Blank New Document
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="bg-white px-10 md:px-0">
+        <div className="max-w-3xl mx-auto py-8 text-sm text-gray-700">
+          <div className="flex items-center justify-between pb-5">
+            <h2 className="font-medium flex-grow">My Documents</h2>
+            <p className="mr-12">Data Created</p>
+            <Icon name="folder" size="3xl" color="gray" />
           </div>
         </div>
       </section>

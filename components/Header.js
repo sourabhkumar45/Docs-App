@@ -3,7 +3,7 @@ import Icon from "@material-tailwind/react/Icon";
 
 function Header() {
   return (
-    <div className="sticky top-0 z-50 flex items-center w-screen px-4 py-2 shadow-md bg-white">
+    <div className="sticky top-0 z-50 flex items-center w-screen px-4 py-2 h-16 shadow-md bg-white">
       <Button
         color="gray"
         buttonType="outline"
@@ -14,10 +14,12 @@ function Header() {
       >
         <Icon name="menu" size="3xl" />
       </Button>
-      <Icon name="description" size="5xl" color="black"></Icon>
-      <h1 className="ml-2 text-gray-700 texr-4xl">Docinator</h1>
+      <Icon name="article" size="5xl" color="yellow"></Icon>
+      <h1 className="ml-2 text-gray-700 text-3xl hidden md:inline-flex">
+        Docinator
+      </h1>
       <div className="md:mx-20 flex flex-grow items-center px-5 py-2 mx-5 bg-gray-100 text-gray-500 rounded-lg text-base focus-within:shadow-md">
-        <Icon name="search" size="3xl" color="gray"></Icon>
+        <Icon name="search" size="3xl" color="yellow"></Icon>
         <input
           type="text"
           placeholder="Search"
