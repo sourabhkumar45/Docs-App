@@ -28,17 +28,15 @@ export default function Home() {
             </Button>
           </div>
           <div>
-            <div className="flex items-center justify-center relative h-40 w-40 cursor-pointer hover:shadow-md bg-white ">
+            <div className="relative h-45 w-40">
               <Image
                 src={plusImage}
                 width={150}
                 height={150}
-                className="mx-0 my-0 bg-white"
+                className="border-1 bg-white"
               />
             </div>
-            <p className="my-2 font-semi-bold text-sm text-gray-700">
-              New Blank Document
-            </p>
+            <p>Blank</p>
           </div>
         </div>
       </section>
