@@ -13,10 +13,6 @@ export default function Home() {
   }
   return (
     <div>
-      <Head>
-        <title>Docinator</title>
-        <link rel="icon" href="/favicon.png" />
-      </Head>
       <Header></Header>
       <section className="bg-[#F8F9FA] pb-10 px-10 ">
         <div className="max-w-3xl mx-auto">

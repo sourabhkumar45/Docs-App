@@ -11,6 +11,8 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
         />
+        <link rel="icon" href="/favicon.png" />
+        <title>Docinator</title>
       </Head>
       <SessionProvider session={session}>
         <Component {...pageProps} />
