@@ -1,9 +1,8 @@
 import "@material-tailwind/react/tailwind.css";
 import "tailwindcss/tailwind.css";
 import Head from "next/head";
-import { useSession, SessionProvider } from "next-auth/react";
 
-function MyApp({ Component, pageProps: { session, ...pageProps } }) {
+function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
@@ -14,9 +13,8 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
         <link rel="icon" href="/favicon.png" />
         <title>Docinator</title>
       </Head>
-      <SessionProvider session={session}>
-        <Component {...pageProps} />
-      </SessionProvider>
+
+      <Component {...pageProps} />
     </>
   );
 }

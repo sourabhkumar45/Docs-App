@@ -1,7 +1,7 @@
 import Button from "@material-tailwind/react/Button";
 import Icon from "@material-tailwind/react/Icon";
 import Image from "next/image";
-import { signIn } from "next-auth/react";
+import { signIn } from "next-auth/client";
 import plusImage from "../public/favicon.png";
 
 function Login() {
