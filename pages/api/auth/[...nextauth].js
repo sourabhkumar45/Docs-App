@@ -1,13 +1,8 @@
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import { FirebaseAdapter } from "@next-auth/firebase-adapter";
-import firebase from "firebase/app";
 import "firebase/firestore";
-import { firebaseConfig } from "../../../firebase.js";
-
-const app = firebase.apps[0] ?? firebase.initializeApp(firebaseConfig);
-
-const firestore = app.firestore();
+import { firestore } from "../../../firebase.js";
 
 export default NextAuth({
   providers: [

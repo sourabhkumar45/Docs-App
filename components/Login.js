@@ -6,7 +6,7 @@ import plusImage from "../public/favicon.png";
 
 function Login() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center border-20">
       <Image
         src={plusImage}
         hiehgt="700"
@@ -15,13 +15,14 @@ function Login() {
       ></Image>
       <h1 className="ml-2 text-gray-700 text-3xl">Docinator</h1>
       <Button
-        className="w-44 mt-10"
+        className="w-54 mt-10"
         color="blue"
+        rounded={true}
         buttonType="filled"
         ripple="light"
         onClick={signIn}
       >
-        Login
+        Login with Google
       </Button>
     </div>
   );

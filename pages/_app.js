@@ -1,6 +1,7 @@
 import "@material-tailwind/react/tailwind.css";
 import "tailwindcss/tailwind.css";
 import Head from "next/head";
+import { Provider } from "next-auth/client";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -13,8 +14,10 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.png" />
         <title>Docinator</title>
       </Head>
-
-      <Component {...pageProps} />
+      {/* Higher Order component */}
+      <Provider>
+        <Component {...pageProps} />
+      </Provider>
     </>
   );
 }
