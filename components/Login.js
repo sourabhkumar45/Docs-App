@@ -6,17 +6,17 @@ import plusImage from "../public/favicon.png";
 
 function Login() {
   return (
-    <div className="flex flex-col items-center justify-center border-20">
+    <div className="flex flex-col items-center justify-center mt-20">
       <Image
         src={plusImage}
         hiehgt="700"
         width="550"
         objectFit="contain"
       ></Image>
-      <h1 className="ml-2 text-gray-700 text-3xl">Docinator</h1>
+      <h1 className="mt-10 text-gray-700 text-3xl">Docinator</h1>
       <Button
         className="w-54 mt-10"
-        color="blue"
+        color="green"
         rounded={true}
         buttonType="filled"
         ripple="light"

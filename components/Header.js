@@ -17,12 +17,12 @@ function Header() {
       >
         <Icon name="menu" size="3xl" />
       </Button>
-      <Icon name="article" size="5xl" color="yellow"></Icon>
+      <Icon name="article" size="5xl" color="green"></Icon>
       <h1 className="ml-2 text-gray-700 text-3xl hidden md:inline-flex">
         Docinator
       </h1>
       <div className="md:mx-20 flex flex-grow items-center px-5 py-2 mx-5 bg-gray-100 text-gray-500 rounded-lg text-base focus-within:shadow-md">
-        <Icon name="search" size="3xl" color="yellow"></Icon>
+        <Icon name="search" size="3xl" color="green"></Icon>
         <input
           type="text"
           placeholder="Search"

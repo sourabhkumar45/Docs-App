@@ -63,14 +63,14 @@ export default function Home() {
       </ModalBody>
       <ModalFooter>
         <Button
-          color="yellow"
+          color="green"
           buttonType="link"
           onClick={() => setShowModal(false)}
           ripple="black"
         >
           Cancel
         </Button>
-        <Button color="yellow" onClick={() => createDocument()} ripple="light">
+        <Button color="green" onClick={() => createDocument()} ripple="light">
           Create
         </Button>
       </ModalFooter>
