@@ -14,11 +14,13 @@ function DocumentRow({ id, fileName, date }) {
       <p className="pr-5 text-sm">{date?.toDate().toDateString()}</p>
       <Button
         color="gray"
-        buttonType="outline"
+        buttonType="link"
         rounded={true}
         iconOnly={true}
         ripple="dark"
-      ></Button>
+      >
+        <Icon name="more_vert" size="2xl" />
+      </Button>
     </div>
   );
 }

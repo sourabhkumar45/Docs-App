@@ -55,7 +55,7 @@ export default function Home() {
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          className="outline-none w-full border-10"
+          className="outline-none w-full"
           placeholder="Enter name of the
           Document..."
           onKeyDown={(e) => e.key === "Enter" && createDocument()}
@@ -80,13 +80,13 @@ export default function Home() {
     <div>
       {modal}
       <Header></Header>
-      <section className="bg-[#F8F9FA] pb-10 px-10 ">
+      <section className="bg-gray-100 pb-10 px-10">
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center justify-between py-6">
             <h2 className="text-gray-700 text-lg">Start a new Document</h2>
             <Button
               color="gray"
-              buttonType="outline"
+              buttonType="link"
               iconOnly={true}
               ripple="dark"
               className="border-0"
@@ -101,8 +101,8 @@ export default function Home() {
             >
               <Image
                 src={plusImage}
-                width={150}
-                height={150}
+                width={170}
+                height={200}
                 className=" bg-white border-0 hover:!bg-[#bdc1c6] rounded-full"
               />
             </div>

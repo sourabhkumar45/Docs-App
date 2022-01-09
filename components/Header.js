@@ -9,11 +9,10 @@ function Header() {
     <div className="sticky top-0 z-50 flex items-center w-screen px-4 py-2 h-16 shadow-md bg-white">
       <Button
         color="gray"
-        buttonType="outline"
+        buttonType="link"
         rounded={true}
         iconOnly={true}
-        ripple="dark"
-        className=" hidden md:inline-flex h-20 w-20 border-0"
+        className=" hidden md:inline-flex h-17 w-17"
       >
         <Icon name="menu" size="3xl" />
       </Button>
@@ -32,11 +31,11 @@ function Header() {
       </div>
       <Button
         color="gray"
-        buttonType="outline"
+        buttonType="link"
         rounded={true}
         iconOnly={true}
         ripple="dark"
-        className="hidden md:inline-flex ml-5 md:ml-20  h-20 w-20 border-0"
+        className="hidden md:inline-flex ml-5 md:ml-20  h-17 w-17 border-0"
       >
         <Icon name="apps" size="3xl" color="gray"></Icon>
       </Button>
