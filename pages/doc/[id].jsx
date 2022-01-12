@@ -20,8 +20,8 @@ const Doc = ({ session }) => {
 			<Meta
 				title={
 					snapshot
-						? `${snapshot.data().fileName} - Google Docs`
-						: `Google Docs`
+						? `${snapshot.data().fileName} - Docinator`
+						: `Docinator`
 				}
 			/>
 			<EditorHeader
